@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>products details</title>
+	<link rel="shortcut icon" type="image/x-icon" href="D:\html subline\projetc 2 store\image\favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!---rating link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+
+
+
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-sizD: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-sizD: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+
+
+
+
+
+
+<body>
+
+
+	<!----------------navigation bar------------------------>
+
+
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<img src="D:\html subline\project 3 ecomsite\img\kyara.jpg" width="125px">
+			</div><!--logo-->
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="">Support</a></li>
+					<li><a href="">Account</a></li>
+				</ul>
+			</nav>
+			<img src="D:\html subline\project 3 ecomsite\img\cart.png" width="30px" height="30px">
+			<img src="D:\html subline\project 3 ecomsite\img\menu.png" class="menu-icon" onclick="menuToggle()">
+		</div><!--navbar-->
+	</div><!---container--->
+
+
+	<!----------JS for navigation bar--------------------->
+	<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menuToggle(){
+            if(MenuItems.style.maxHeight === "0px"){
+                MenuItems.style.maxHeight = "200px"
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+			</script>
+
+
+
+
+			<!----------------navigation bar------------------------>
+
+
+
+			<!------single products details------------>
+
+
+
+			<div class="single-prod">
+				<div class="small-container">
+					<div class="row row-prod">
+						<div class="col-2">
+
+<div class="container">
+  <div class="mySlides">
+   
+    <img src="D:\html subline\project 3 ecomsite\img\hedcab4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+   
+    <img src="D:\html subline\project 3 ecomsite\img\hedcab3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+   
+    <img src="D:\html subline\project 3 ecomsite\img\hedcab2.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+  
+    <img src="D:\html subline\project 3 ecomsite\img\hedcab4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    
+    <img src="D:\html subline\project 3 ecomsite\img\hedcab3.jpg" style="width:100%">
+  </div>
+    
+ 
+    
+ 
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="D:\html subline\project 3 ecomsite\img\hedcab4.jpg" style="width:100%" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="D:\html subline\project 3 ecomsite\img\hedcab3.jpg" style="width:100%" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="D:\html subline\project 3 ecomsite\img\hedcab4.jpg" style="width:100%" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="D:\html subline\project 3 ecomsite\img\hedcab2.jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="D:\html subline\project 3 ecomsite\img\hedcab4.jpg" style="width:100%" onclick="currentSlide(5)">
+    </div>    
+    
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<br>
+
+						
+
+
+
+
+
+
+						</div><!--col-2--->
+						<div class="col-2 config ">
+							<p>Home / USB cable</p>
+							<h1>Braded Usb Cable </h1>
+							<h4><del>₹799</del>₹599</h4>
+							
+<h4>Select Paracord Colour</h4>
+<label class="cont"><img src="D:\html subline\project 3 ecomsite\img\download.jfif" /><input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="cont"><img src="D:\html subline\project 3 ecomsite\img\imageees.jpg" />
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="cont"><img src="D:\html subline\project 3 ecomsite\img\KTPC405_01_atwood.jpg" />
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="cont"><img src="D:\html subline\project 3 ecomsite\img\PAR-RBREDSW--min__09513.1524595534.jpg" />
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+
+							
+
+<h4>Connector casing colour</h4>
+
+<label class="cont">White<img src="D:\html subline\project 3 ecomsite\img\white.jpg" /><input type="radio" checked="checked" name="radio2">
+  <span class="checkmark"></span>
+</label>
+<label class="cont">Black<img src="D:\html subline\project 3 ecomsite\img\black.jpg" />
+  <input type="radio" name="radio2">
+  <span class="checkmark"></span>
+</label>
+
+
+<h4>Connector of choice (#1st side)</h4>
+
+<label class="cont">USB Type A<img src="D:\html subline\project 3 ecomsite\img\typeA.png" />
+	<input type="radio" checked="checked" name="radio3">
+  <span class="checkmark"></span>
+</label>
+<label class="cont">USB Type C<img src="D:\html subline\project 3 ecomsite\img\typec.png" />
+  <input type="radio" name="radio3">
+  <span class="checkmark"></span>
+</label>
+
+
+
+<h4>Connector of choice (#2nd side)</h4>
+
+<label class="cont">Type C<img src="D:\html subline\project 3 ecomsite\img\typec.png" />
+	<input type="radio" checked="checked" name="radio4">
+  <span class="checkmark"></span>
+</label>
+
+<label class="cont">Micro B<img src="D:\html subline\project 3 ecomsite\img\microb.png" />
+  <input type="radio" name="radio4">
+  <span class="checkmark"></span>
+</label>
+
+<label class="cont">lighting port<img src="D:\html subline\project 3 ecomsite\img\lightning-connector-1-removebg-preview.png" />
+	<input type="radio" checked="checked" name="radio4">
+  <span class="checkmark"></span>
+</label>
+
+
+
+            
+
+              <select class="length">
+								<option>select cable length </option>
+								<option>1 meter</option>
+								<option>1.5 meter </option>
+								<option>2 meter </option>
+							</select>
+
+
+							<input class="quantity" value="1" type="number" min="1" max="5">
+							<a href="" class="btn">Add To Cart </a>
+	<br>
+							<br>
+						</div>
+
+ 
+
+
+
+
+
+
+
+
+
+				
+							<br>
+							<br>
+            	</div><!--prod-dis-->
+            </div>
+					</div><!--small-container--->
+			</div>	<!--single-prod---->
+			</div>	<!--single-prod---->
+
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					if (n > slides.length) {slideIndex = 1}    
+						if (n < 1) {slideIndex = slides.length}
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";  
+							}
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							}
+							slides[slideIndex-1].style.display = "block";  
+							dots[slideIndex-1].className += " active";
+						}
+					</script>
+
+
+
+
+					<!------single products details end------------>
+
+					<!-------related products----------->
+
+					<h2 class="title">RELATED PRODUCTS</h2>
+
+					<div class="products">
+						<div class="row">
+							<div class="col-4">
+								<img src="D:\html subline\project 3 ecomsite\img\hedcab4.jpg">
+								<h4>USB cable</h4>
+								<div class="rating">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+								</div><!--rating-->
+								<p><del>₹799</del>₹599</p>
+							</div><!--col-4-->
+
+
+							<div class="col-4">
+								<img src="D:\html subline\project 3 ecomsite\img\hedcab2.jpg">
+								<h4>Keyboad Cable</h4>
+								<div class="rating">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-starchecked"></span>
+									<span class="fa fa-star"></span>
+								</div><!--rating-->
+								<p><del>₹799</del>₹599</p>
+							</div><!--col-4-->
+
+
+							<div class="col-4">
+								<img src="D:\html subline\project 3 ecomsite\img\hedcab3.jpg">
+								<h4>Aviator 4-pin connector</h4>
+								<div class="rating">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+								</div><!--rating-->
+								<p><del>₹799</del>₹599</p>
+						
+
+							</div><!--col-4-->
+						</div><!--row-->
+					</div><!---product--->
+
+
+
+					<!-------latest releses end----------->
+
+
+
+					<!----------------footer--------------------->
+
+					<div class="footer">
+						<div class="container">
+							<div class="row">
+								<div class="footer-colimg">
+									<img src="D:\html subline\project 3 ecomsite\img\kyara.jpg">
+								</div>
+								<div class="footer-col-1">
+
+									<form action="/action_page.php">
+										<div class="container-form">
+											<h3>Subscribe to our Newsletter</h3>
+											<p>get weekly newsletters,letest deals,offers and more.</p>
+										</div>
+
+										<div class="container-form" >
+
+											<input type="text" placeholder="Email address" name="mail" required>
+										</div>
+
+										<div class="container-form">
+											<input type="submit" value="Subscribe">
+										</div>
+									</form>
+								</div><!--foot col1-->
+								<div class="footer-col-2">
+									<img src="D:\html subline\project 3 ecomsite\img\kyara.jpg">
+									<p></p>
+								</div><!--foot col2-->
+								<div class="footer-col-3">
+									<h3>ABOUT</h3>
+									<ul>
+										<li>home</li>
+										<li>store</li>
+										<li>orders</li>
+										<li>return policy</li>
+										<li>dilivery details</li>
+										<li>privicy policy</li>
+									</ul>
+								</div><!--foot col3-->
+								<div class="footer-col-4">
+									<h3>OTHERS</h3>
+									<ul>
+										<li>home</li>
+										<li>store</li>
+										<li>orders</li>
+										<li>return policy</li>
+										<li>dilivery details</li>
+										<li>privicy policy</li>
+									</ul>
+								</div><!--foot col4-->
+							</div><!--row-->
+							<hr>
+							<p class="copyr">&copy;My Kyara Store. All rights are reserved</p>
+						</div><!--container-->
+					</div><!--footer-->
+
+					<!------------------footer end------------------------>
+
+				</body>
+				</html>

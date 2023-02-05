@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cart</title>
+	<link rel="shortcut icon" type="image/x-icon" href="D:\html subline\projetc 2 store\image\favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!---rating link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+
+
+	<!----------------navigation bar------------------------>
+
+
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<img src="imgs/kyara.jpg" width="125px">
+			</div><!--logo-->
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="">Support</a></li>
+					<li><a href="account.html">Account</a></li>
+				</ul>
+			</nav>
+			<img src="imgs/cart.png" width="30px" height="30px">
+			<img src="imgs/menu.png" class="menu-icon" onclick="menuToggle()">
+		</div><!--navbar-->
+	</div><!---container--->
+
+
+	<!----------JS for navigation bar--------------------->
+	<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menuToggle(){
+            if(MenuItems.style.maxHeight === "0px"){
+                MenuItems.style.maxHeight = "200px"
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+
+			</script>
+
+<!--------------------cart items details----->
+
+<div class="small-container cart-page">
+	<table>
+		<tr>
+			<th>Product</th>
+			<th>Quantity</th>
+			<th>Subtotal</th>
+		</tr>
+		<tr>
+			<td>
+				<div class="cart-info">
+           <img src="imgs/hedcab2.jpg">
+					<div>
+						<p>USB Cable</p>
+            <small>pricD:₹599</small>
+            <br>
+            <a href="">remove</a>
+					</div>
+				</div>
+			</td>
+			<td><input type="number" value="1" min="1" max="5"></td>
+      <td>₹599</td>
+		</tr>
+
+		<tr>
+			<td>
+				<div class="cart-info">
+           <img src="imgs/hedcab2.jpg">
+					<div>
+						<p>USB Cable</p>
+            <small>pricD:₹599</small>
+            <br>
+            <a href="">remove</a>
+					</div>
+				</div>
+			</td>
+			<td><input type="number" value="1" min="1" max="5"></td>
+      <td>₹599</td>
+		</tr>
+
+		<tr>
+			<td>
+				<div class="cart-info">
+           <img src="imgs/hedcab2.jpg">
+					<div>
+						<p>USB Cable</p>
+            <small>pricD:₹599</small>
+            <br>
+            <a href="">remove</a>
+					</div>
+				</div>
+			</td>
+			<td><input type="number" value="1" min="1" max="5"></td>
+      <td>₹599</td>
+		</tr>
+	</table>
+
+
+	<div class="total-price">
+		<table>
+			<tr>
+				<td>subtotal</td>
+				<td>₹599</td>
+			</tr>
+			<tr>
+				<td>GST Tax</td>
+				<td>₹60</td>
+			</tr>
+			<tr>
+				<td>total</td>
+				<td>₹659</td>
+			</tr>
+
+		</table>
+		<br>
+	</div>
+	<a class="check" href="">check out</a>
+</div>
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+					
+
+
+					<!----------------footer--------------------->
+
+<div class="footer">
+ <div class="container">
+  <div class="row">
+	<div class="footer-colimg">
+    	<img src="imgs/kyara.jpg">
+	</div>
+	<div class="footer-col-1">
+		<form action="/action_page.php">
+		   <div class="container-form">
+		     <h3>Subscribe to our Newsletter</h3>
+	         <p>get weekly newsletters,letest deals,offers and more.</p>
+		   </div>
+ 			<div class="container-form" >
+
+	          <input type="text" placeholder="Email address" name="mail" required>
+			</div>
+             <div class="container-form">
+             	<input type="submit" value="Subscribe">
+			 </div>
+		</form>
+	</div><!--foot col1-->
+
+    <div class="footer-col-2">
+		<img src="imgs/kyara.jpg">
+	</div><!--foot col2-->
+
+	<div class="footer-col-3">
+        <h3>ABOUT</h3>
+		<ul>
+		   <li>home</li>
+		   <li>store</li>
+		   <li>orders</li>
+		   <li>return policy</li>
+		   <li>dilivery details</li>
+		   <li>privicy policy</li>
+        </ul>
+	</div><!--foot col3-->
+
+	<div class="footer-col-4">
+		<h3>OTHERS</h3>
+		<ul>
+			<li>home</li>
+			<li>store</li>
+			<li>orders</li>
+			<li>return policy</li>
+			<li>dilivery details</li>
+			<li>privicy policy</li>
+		</ul>
+	</div><!--foot col4-->
+   </div><!--row-->
+<hr>x
+
+       <p class="copyr">&copy;My Kyara Store. All rights are reserved</p>
+ </div><!--container-->
+</div><!--footer-->
+
+					<!------------------footer end------------------------>
+
+				</body>
+				</html>

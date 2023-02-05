@@ -1,0 +1,778 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+
+}
+body{
+	background-color:#d3feff ;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ h2 {
+  
+  font-family: Arial Rounded MT ;
+  font-size: 35px;
+}
+/*---------------------navigation bar -------------------*/
+
+
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul{
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+  
+}
+
+nav a:hover {
+   color: gray;
+}
+nav p{
+	color: white;
+}
+.navbar img{
+  border-radius: 50%;
+  width: 30px;
+
+}
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
+
+/*--- -----------------media query for menu ---------------*/
+
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0%;
+    background: black;
+    opacity: 0.85;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    z-index: 2;
+    
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+  nav ul li a {
+    color: gray;
+    transition:  0.5s;
+  }
+  nav ul li a:hover {
+    color: white;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+}
+
+
+/*-------------------------navigation bar end-----------------*/
+
+
+
+
+
+.container{
+	max-width:1300px ;
+	margin: auto;
+	padding-right: 25px;
+	padding-left: 25px;
+
+}
+
+
+.row{
+	display: flex;
+  align-items: center;
+  	 flex-wrap: wrap ;
+    justify-content: space-around;
+}
+ .small-container{
+  max-width: 1080px;
+  padding-right: 25px;
+  padding-left: 20px;
+  margin: auto;
+  
+ }
+
+
+
+
+
+/*-----------------------header ----------------------*/
+.header{
+  background: radial-gradient(#F7BEC0,#E7625F);
+}
+.header .row{
+  margin-top: 70px;
+}
+
+
+.col-2{
+  flex-basis: 50%;
+  min-width: 300px;
+  text-align: center;  
+  padding: 20px;                                                                                      ;
+
+}
+.col-2 img{
+  max-width: 100%;
+  padding: 10px 0;
+  
+} 
+.col-2 h1{
+  font-size: 40px;
+  line-height: 60px ;
+  margin: 25px 0;
+  text-align: center; 
+}
+ 
+.btn{
+  display: inline-block;
+  background:red ;
+  color: whitesmoke;
+  padding: 8px 30px;
+  margin: 30px 0;
+  text-decoration: none;
+  border-radius: 30px;
+
+  transition: opacity 0.5s;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  
+}
+.btn:hover{
+  opacity: 0.6;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+
+}
+
+/*---------------- media query for header ---------------*/
+@media only screen and (max-width: 800px) {
+  .row{
+    text-align: center;
+  }
+  .col-2,.col-3,.col-4{
+    flex-basis: 100%;
+  }
+}
+
+/*-----------------------header end-----------------------*/
+
+
+
+
+
+/*-----------------------ALl products--------------------------*/
+.row-2{
+	justify-content: space-between ;
+	margin: 100px auto 10px;
+	padding-right: 10px;
+  text-align: right;
+}
+select{
+
+}
+select:focus{
+	outline: none;
+}
+.page-btn{
+	margin: 0 auto 80px;
+  text-align: center;
+
+}
+.page-btn span{
+	display: inline-block;
+	border: 1px solid red;
+	margin-left: 10px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.page-btn span:hover{
+	background-color: red;
+	color: white;
+}
+
+
+
+/*-----------------------ALl products end--------------------------*/
+
+
+
+
+
+/*------------------------catagories----------------------*/
+.catagories{
+  margin: 70px 0;
+ }
+ .col-3{
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+  position: relative;
+  text-align: center;
+  transition: transform 0.5s;
+ }
+ .col-3 img{
+  width: 100%;
+  width: 300px;
+ }
+
+ 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 30px;
+  font-family: Arial Rounded MT ;
+  transform: translate(-50%, -50%);
+
+}
+.col-3:hover{
+      transform: translatey(-10px);
+      cursor: pointer;
+}
+
+
+
+
+/*----------------------catagories end--------------------*/
+
+
+
+
+
+
+
+
+
+
+.title{
+	text-align: center;
+	margin: 0 auto 80px;
+	line-height: 60px ;
+	position: relative;
+}
+.title:after{
+	content: "";
+	background: red ;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+
+
+
+
+/*----------------------single prod delailes-----------------*/
+
+ 
+ @media only screen and(max-width:100%){
+   
+ }
+
+
+
+
+.single-prod{
+  margin-top: 80px;
+  background-color:#B0FFEE ;
+}
+.single-prod .col-2 img{
+  padding: 0;
+}
+.single-prod .col-2{
+  padding: 20px;
+}
+.single-prod h4{
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.single-prod select{
+  display: block;
+  padding: 5px;
+  margin-top:20px ;
+}
+.single-prod input{
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right:10px ;
+}
+.prod-dis{
+  text-align: center;
+}
+.prod-dis .col-41{
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/*------------radio box customizer--- */
+.cont {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.cont input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.cont:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+/* When the radio button is checked, add a blue background */
+.cont input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+.cont input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.cont img{
+  width: 90px;
+}
+
+
+/* Style the indicator (dot/circle) */
+.cont .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.length{
+  position: relative;
+  left: 35%;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 19px;
+}
+
+
+
+
+
+/*----------------------single prod delailes end-----------------*/
+
+/*----------------------cart items-------------------------*/
+
+.cart-page{
+  margin: 80px auto;
+
+}
+table{
+  width: 100%;
+  border-collapse: collapse ;
+}
+.cart-info{
+  display: flex;
+  flex-wrap:wrap ;
+}
+th{
+  text-align: left;
+  padding: 10px;
+  background-color: gray;
+
+}
+td{
+  padding: 10px 5px;
+}
+
+td input{
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td a{
+  color: red;
+  font-size: 12px;
+
+}
+td img{
+  width: 80px;
+  height: 80px;
+  margin-right:10px ; 
+}
+
+
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+}
+.total-price table{
+  border-top: 3px solid red;
+  width: 100%;
+  max-width: 370px;
+
+}
+td:last-child{
+  text-align: right;
+}
+th:last-child{
+  text-align: right;
+}
+ 
+.check{
+  text-align: center;
+  background-color: green;
+  width: 100%;
+  padding: 7px 35px;
+   display: flex;
+  margin-bottom: 15px;
+
+}
+
+
+/*----------------------cart items end-------------------------*/
+
+
+
+
+
+
+
+/*-----featured products------------*/
+
+
+.col-4{
+	flex-basis:25% ;
+	padding: 10px;
+	min-width: 420px;
+  transition: transform 0.5s;
+	margin-bottom:50px ;
+}
+.col-4 img{
+	width: 100%;
+}
+.checked {
+  color: red;
+}
+.col-4:hover{
+      transform: translatey(-10px);
+      background-color:#E6FFF3 ;
+      cursor: pointer;
+    }
+
+/*-----featured products ends------------*/
+
+
+
+/*--------------about section-------------*/
+
+.about-1{
+  background-color:#C7F8E5 ;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  margin: 40px;
+  border-radius: 10px;
+}
+
+
+
+
+/*--------------about section end-------------*/
+
+
+/*---------------------offers--------------------*/
+.offers{
+	background: radial-gradient(#F7BEC0,#E7625F);
+	margin-top: 80px;
+	padding: 30px 0;
+	
+
+}
+.col-2 .offers-img {
+	padding: 50px;
+}
+/*---------------------offers end--------------------*/
+
+/*-----------------------our team------------------*/
+
+.card{
+  position: relative;
+  width: 250px;
+  background-image: url('E:/html subline/img/babyyoda.jpg');
+  background-size: 250px 300px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+
+
+}
+.partner{
+  position: absolute;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  margin: 20px;
+  margin-top: 100px;
+  padding: 20px 10px;
+  text-shadow: 5px 5px 6px black;
+
+ }
+
+
+
+
+
+.card:hover .partner{
+ 
+  visibility: visible;
+  opacity: 1;
+
+}
+.card:hover{
+    transform: translatey(-10px);
+    
+}
+
+
+
+
+
+
+/*-----------------------our team end------------------*/
+
+
+
+
+
+/*----------------testimonial---------------------*/
+
+.testimonial{
+	padding-top:100px ;
+
+}
+.testimonial .col-3{
+	text-align: center;
+	padding: 40px 20px;
+	box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.1);
+}
+.fa-quote-left, .fa-quote-right{
+	font-size: 35px;
+	color: red;
+}
+.col-41 p{
+	color: black;
+	margin: 12px 0;
+}
+
+/*----------------testimonial end---------------------*/
+
+
+/*----------------brands---------------------*/
+
+.brands{
+	margin: 100px 0;
+
+}
+.col-5{
+	width: 160px
+}
+.col-5 img{
+	width: 100%;
+	cursor: pointer;
+	padding: 40px;
+	filter: grayscale(100%);
+}
+.col-5 img:hover{
+	filter: grayscale(0%);
+}
+
+
+/*----------------brands end---------------------*/
+
+
+/*----------------footer---------------------*/
+
+
+.footer{
+	background-color: black;
+	font-size: 14px;
+	padding: 60px 0;
+	color: white;
+}
+.footer-col-3 a ,.footer-col-4 a{
+  color: white;
+}
+
+
+
+.footer p{
+	color: white;
+}
+.footer h3{
+	color: white;
+	
+}
+.footer-col-1,.footer-col-2, .footer-col-3,.footer-col-4{
+	min-width: 250px;
+	margin-bottom: 20px;
+
+}
+.footer-col-1{
+	flex-basis:30%;
+
+}
+.footer-col-2{
+	flex:1;
+	text-align: center;
+}
+.footer-col-2 img{
+	border-radius: 50%;
+	width: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-col-3,.footer-col-4{
+	flex-basis: 12%;
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+}
+
+.footer hr{
+	border: none;
+	background: whitesmoke;
+	height: 1px ;
+	margin: 20px 0;
+}
+.footer-colimg img {
+	border-radius: 50%;
+	width: 100px;
+	margin-bottom: 20px;
+}
+.footer-colimg{
+  display: none;
+  flex-basis: 12%;
+	text-align: center;
+
+}
+.copyr{
+	text-align: center;
+
+}
+@media only screen and (max-width: 900px){
+  .footer-col-2{
+  	display: none;
+  }
+  .footer-colimg{
+  	display: block;
+  }
+ 
+}
+
+
+
+.container-form {
+  padding: 5px;
+  text-align: center;
+
+ 
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+
+}
+
+
+
+input[type=submit] {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+	
+
